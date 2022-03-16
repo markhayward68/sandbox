@@ -1,0 +1,49 @@
+/******************
+*******************
+  main.css template
+*******************
+*******************/
+
+
+/* Old CSS style */ 
+#id_name{color:red}
+.class_name{color:blue}
+
+
+
+/**************
+  CSS3 style 
+***************/
+
+/*
+* {color:blue;} '*' = everything coloured blue 
+:not(.class_name){color:red;} anything NOT in class_name coloured red 
+*/
+
+/* header formatting */  
+h1[name]{color:red;}  /* any h1 with attribute 'name', value of 'name' doesn't matter */ 
+h1[name="purple_text"]{color:purple;}  /* h1 with 'name' purple_text */  
+
+
+/*paragraph formatting */ 
+p[name]{color:green;}  /* any p with attribute 'name', value of 'name' doesn't matter */ 
+
+/* p[name^="start... p[name$="end... p[name*="contain... */ 
+p[name="yellow_text"]{color:yellow;}
+p[xxx="orange_text"]{color:orange;} 
+
+/*
+p:nth-child(3){color:black;} every 3rd child p coloured black 
+p:nth-child(odd){color:red;} every odd child p coloured red  
+p:nth-child(even){color:green;} every even child p coloured green 
+*/ 
+
+/* 
+selectors 
+div > p {color:yellow;}  > only applies to p that are a child of div 
+p.class_name + p {color:orange;}  '+' p must immediately follow p of class class_name 
+p.class-name ~ p {color:red;}  '~' does not need to immediately follow p of class class_name  
+*/ 
+
+
+
