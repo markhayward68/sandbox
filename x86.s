@@ -27,7 +27,7 @@ _start:
 	
 _loop: 
 	add ebx, ebx 			; ebx += 
-	dec ecx 				; decrement ecx by 1 
+	dec ecx 			; decrement ecx by 1 
 	cmp ecx, 0 			; compare ecx to 0 
 	jg _loop 			; if ecx is > 0 start loop again 
 	jmp _exit 						;	
